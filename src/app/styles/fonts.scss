@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro ExtraLight'), local('SofiaProExtraLight'),
+  url('./fonts/SofiaProExtraLight.woff2') format('woff2'),
+  url('./fonts/SofiaProExtraLight.woff') format('woff'),
+  url('./fonts/SofiaProExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro Light'), local('SofiaProLight'),
+  url('./fonts/SofiaProLight.woff2') format('woff2'),
+  url('./fonts/SofiaProLight.woff') format('woff'),
+  url('./fonts/SofiaProLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro Regular'), local('SofiaProRegular'),
+  url('./fonts/SofiaProRegular.woff2') format('woff2'),
+  url('./fonts/SofiaProRegular.woff') format('woff'),
+  url('./fonts/SofiaProRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro Medium'), local('SofiaProMedium'),
+  url('./fonts/SofiaProMedium.woff2') format('woff2'),
+  url('./fonts/SofiaProMedium.woff') format('woff'),
+  url('./fonts/SofiaProMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Semi';
+  src: local('Sofia Pro Semi Bold'), local('SofiaProSemiBold'),
+  url('./fonts/SofiaProSemiBold.woff2') format('woff2'),
+  url('./fonts/SofiaProSemiBold.woff') format('woff'),
+  url('./fonts/SofiaProSemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro Bold'), local('SofiaProBold'),
+  url('./fonts/SofiaProBold.woff2') format('woff2'),
+  url('./fonts/SofiaProBold.woff') format('woff'),
+  url('./fonts/SofiaProBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro Black'), local('SofiaProBlack'),
+  url('./fonts/SofiaProBlack.woff2') format('woff2'),
+  url('./fonts/SofiaProBlack.woff') format('woff'),
+  url('./fonts/SofiaProBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}

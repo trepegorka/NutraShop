@@ -5,13 +5,11 @@ import { Text, TextType } from '@/shared/ui/Text/Text'
 import { CarouselCard } from '@/widgets/CarouselCard/CarouselCard'
 import { CardMenuButtons } from '@/widgets/CardMenuButtons/CardMenuButtons'
 import { Logo } from '@/shared/ui/Logo/Logo'
-import { useUI } from '@/app/config/UIContext/useUI'
 import { FwhVideoCard } from '@/shared/ui/FWHVideoCard/FWHVideoCard'
 import { Button, ButtonType } from '@/shared/ui/Button/Button'
 
 // Main page
 const Home: React.FC = () => {
-	const { isUI } = useUI()
 	return (
 		<div className={'flex flex-col'}>
 			<div className={'container px-3 mx-auto'}>

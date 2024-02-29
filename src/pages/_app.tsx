@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<title>HIMS Clone</title>
 				<meta name='description' content='Welcome, made by trepegorka.com' />
 			</Head>
-			<div className={'sticky top-0 z-10 bg-black'}>
+			<div className={'sticky top-0 z-50 bg-black'}>
 				<UIChanger />
 			</div>
 

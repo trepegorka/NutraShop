@@ -1,0 +1,16 @@
+.ul > li {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 8px;
+    height: 90%;
+    background-color: black;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10rem;
+  }
+}

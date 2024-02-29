@@ -19,7 +19,8 @@ const config: Config = {
 
 			colors: {
 				...colors,
-				UI: 'white'
+				UI: '#3f3f46',
+				UI_text: '#71717a'
 			},
 
 			fontWeight: {

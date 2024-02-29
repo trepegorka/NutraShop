@@ -5,6 +5,9 @@
 
 * {
   font-family: 'Sofia Pro', sans-serif;
+  outline: none;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -15,26 +18,28 @@ html {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 13, 255, 9;
   --background-end-rgb: 13, 255, 9;
-  //--background-end-rgb: 13, 255, 255;
+  --backgdsad: 13, 255, 255;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-                  to bottom,
-                  transparent,
-                  rgb(var(--background-end-rgb))
-  ) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .UI {
     color: transparent !important;
-    background-color: white !important;
+    @apply bg-UI #{!important};
     border-radius: 2rem !important;
+    border: none;
+  }
+  .UI::before{
+    background-color: transparent!important;
   }
   .animation-play-state-paused {
     animation-play-state: paused;
+  }
+  .UI-text {
+    @apply bg-UI_text #{!important};
   }
 }
 

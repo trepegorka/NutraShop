@@ -7,51 +7,97 @@ import { CardMenuButtons } from '@/widgets/CardMenuButtons/CardMenuButtons'
 import { Logo } from '@/shared/ui/Logo/Logo'
 import { FwhVideoCard } from '@/shared/ui/FWHVideoCard/FWHVideoCard'
 import { Button, ButtonType } from '@/shared/ui/Button/Button'
+import { AccordionCardHolder } from '@/widgets/AccordionCardHolder/AccordionCardHolder'
 
 // Main page
 const Home: React.FC = () => {
 	return (
-		<div className={'flex flex-col'}>
-			<div className={'container px-3 mx-auto'}>
+		<>
+			<div className={'relative bg-amber-50 flex flex-col rounded-b-xl'}>
 				{/*TODO: header*/}
-				<Logo className={'mb-3'} />
 
 				{/*TODO: sec1*/}
-				<CarouselCard className={'mb-14'} />
-
-				<div className={'flex mb-3'}>
-					<Text textType={TextType.h1} className={'!text-4xl'}>
-						Convenient, quality <br /> care{' '}
-						<span className={`text-amber-800`}>100% online</span>
-					</Text>
+				<div className={'container px-3 mx-auto'}>
+					<Logo className={'mb-3'} />
+					<CarouselCard className={'mb-14'} />
+					<div className={'flex mb-3'}>
+						<Text textType={TextType.h1} className={'!text-4xl'}>
+							Convenient, quality <br /> care{' '}
+							<span className={`text-amber-800`}>100% online</span>
+						</Text>
+					</div>
+					<div className={'flex'}>
+						<Text className={'text-zinc-50 mb-10'} textType={TextType.p}>
+							How can we help you?
+						</Text>
+					</div>
+					<CardMenuButtons className={'mb-10'} />
 				</div>
 
-				<div className={'flex'}>
-					<Text className={'text-zinc-500 mb-10'} textType={TextType.p}>
-						How can we help you?
-					</Text>
+				{/*TODO: sec2 !?*/}
+				<div className={'flex bg-amber-50'}>
+					<FwhVideoCard className={'mb-10'} />
 				</div>
 
-				<CardMenuButtons className={'mb-10'} />
+				{/*TODO: sec3*/}
+				<div
+					className={'container bg-amber-50 flex flex-col px-3 pb-10 mx-auto'}
+				>
+					<div className={'flex mb-3 md:w-1/2'}>
+						<Text textType={TextType.h2} className={'!text-4xl'}>
+							We’re making happy and healthy easy to achieve
+						</Text>
+					</div>
+					<div className={'flex mb-10'}>
+						<Button buttonType={ButtonType.primary}>
+							<Text textType={TextType.span}> Explore treatments</Text>
+						</Button>
+					</div>
+					<div className={'flex flex-col'}>
+						<AccordionCardHolder />
+					</div>
+				</div>
 			</div>
 
-			{/*TODO: sec2 !?*/}
-			<div className={'flex'}>
-				<FwhVideoCard className={'mb-10'} />
+			{/*TODO: page separator*/}
+			<div className={'h-8 bg-black -my-2'}></div>
+
+			<div className={'bg-amber-50 flex flex-col rounded-t-xl overflow-x-auto'}>
+				{/*TODO: sec4*/}
+				<div className={'container flex flex-col px-3 pt-10 mx-auto'}>
+					<div className={'flex mb-3 md:w-1/2'}>
+						<Text textType={TextType.h2} className={'!text-4xl'}>
+							We’re making happy and healthy easy to achieve
+						</Text>
+					</div>
+				</div>
 			</div>
 
-			{/*TODO: sec3*/}
-			<div className={'container flex flex-col px-3 mx-auto'}>
-				<div className={'flex mb-3 md:w-1/2'}>
-					<Text textType={TextType.h2} className={'!text-4xl'}>
-						We’re making happy and healthy easy to achieve
-					</Text>
-				</div>
-				<div className={'flex'}>
-					<Button buttonType={ButtonType.primary}>Explore treatments</Button>
+			{/*TODO: sec5 - carousel with buttons*/}
+			<div className={'bg-amber-50 flex overflow-x-auto'}>
+				<div
+					className={
+						'container flex overflow-x-visible space-x-1 mx-auto relative'
+					}
+				>
+					<div
+						className={'flex bg-UI rounded-xl !min-w-[200px] aspect-square'}
+					></div>
+					<div
+						className={'flex bg-UI rounded-xl !min-w-[200px] aspect-square'}
+					></div>
+					<div
+						className={'flex bg-UI rounded-xl !min-w-[200px] aspect-square'}
+					></div>
+					<div
+						className={'flex bg-UI rounded-xl !min-w-[200px] aspect-square'}
+					></div>
+					<div
+						className={'flex bg-UI rounded-xl !min-w-[200px] aspect-square'}
+					></div>
 				</div>
 			</div>
-		</div>
+		</>
 	)
 }
 

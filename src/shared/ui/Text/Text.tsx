@@ -5,7 +5,7 @@ import { useUI } from '@/app/config/UIContext/useUI'
 export enum TextType {
 	h1 = 'text-7xl font-normal text-gray-800',
 	h2 = 'text-6xl font-normal text-gray-800',
-	h3 = 'text-5xl font-normal text-gray-800',
+	h3 = 'text-5xl font-medium text-gray-800',
 	h4 = 'text-4xl font-normal text-gray-800',
 	h5 = 'text-3xl font-normal text-gray-800',
 	h6 = 'text-2xl font-normal text-gray-800',
@@ -35,7 +35,7 @@ export function Text({ children, textType, className }: IText) {
 			className={classNames(
 				tailwindClasses,
 				{
-					['bg-gray-200 !text-transparent rounded-[2rem]']: isUI
+					['UI-text !text-transparent rounded-[2rem]']: isUI
 				},
 				[className]
 			)}

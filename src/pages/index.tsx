@@ -35,15 +35,13 @@ const Home: React.FC = () => {
 				</div>
 
 				{/*TODO: sec2 !?*/}
-				<div className={'flex bg-amber-50'}>
+				<div className={'flex'}>
 					<FwhVideoCard className={'mb-10'} />
 				</div>
 
 				{/*TODO: sec3*/}
-				<div
-					className={'container bg-amber-50 flex flex-col px-3 pb-10 mx-auto'}
-				>
-					<div className={'flex mb-3 md:w-1/2'}>
+				<div className={'container px-3 pb-10 mx-auto'}>
+					<div className={'mb-3 md:w-1/2'}>
 						<Text textType={TextType.h2} className={'!text-4xl'}>
 							We’re making happy and healthy easy to achieve
 						</Text>
@@ -62,10 +60,10 @@ const Home: React.FC = () => {
 			{/*TODO: page separator*/}
 			<div className={'h-8 bg-black -my-2'}></div>
 
-			<div className={'bg-amber-50 flex flex-col rounded-t-xl overflow-x-auto'}>
+			<div className={'bg-amber-50 rounded-t-xl overflow-x-auto'}>
 				{/*TODO: sec4*/}
-				<div className={'container flex flex-col px-3 pt-10 mx-auto'}>
-					<div className={'flex mb-3 md:w-1/2'}>
+				<div className={'container px-3 pt-10 mx-auto'}>
+					<div className={'mb-3 md:w-1/2'}>
 						<Text textType={TextType.h2} className={'!text-4xl'}>
 							We’re making happy and healthy easy to achieve
 						</Text>
@@ -95,6 +93,17 @@ const Home: React.FC = () => {
 					<div
 						className={'flex bg-UI rounded-xl !min-w-[200px] aspect-square'}
 					></div>
+				</div>
+			</div>
+
+			<div className={'bg-amber-50 rounded-t-xl overflow-x-auto'}>
+				{/*TODO: sec4*/}
+				<div className={'container px-3 pt-10 mx-auto'}>
+					<div className={'mb-3 md:w-1/2'}>
+						<Text textType={TextType.h2} className={'!text-4xl'}>
+							We’re making happy and healthy easy to achieve
+						</Text>
+					</div>
 				</div>
 			</div>
 		</>

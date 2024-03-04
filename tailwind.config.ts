@@ -44,9 +44,9 @@ const config: Config = {
 					}
 				},
 				infinityLoading: {
-					'0%': { transform: 'translateX(-100vw)' },
+					'0%': { transform: 'translateX(-150vw)' },
 					'100%': {
-						transform: 'translateX(200vw)'
+						transform: 'translateX(250vw)'
 					}
 				}
 			}
